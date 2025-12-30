@@ -12,7 +12,13 @@
     <div id="audio-gate" class="stage active">
         <div class="glass-container">
             <h2 class="greeting">Ready for 2026?</h2>
-            <button id="start-btn">Start Journey</button>
+        
+            <div id="countdown-timer" class="timer-display">
+                <span id="days">00</span>d : <span id="hours">00</span>h : <span id="minutes">00</span>m : <span id="seconds">00</span>s
+            </div>
+
+            <button id="start-btn" style="display: none;">Start Journey</button>
+            <p id="lock-message">The journey begins at midnight.</p>
         </div>
     </div>
 

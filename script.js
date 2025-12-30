@@ -109,3 +109,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+const targetDate = new Date("January 1, 2026 00:00:00").getTime();
+const startBtn = document.getElementById('start-btn');
+const timerDisplay = document.getElementById('countdown-timer');
+const lockMessage = document.getElementById('lock-message');
+
+const countdownLogic = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    // Time calculations
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Update the HTML
+    document.getElementById("days").innerText = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+    // If the countdown is finished
+    if (distance < 0) {
+        clearInterval(countdownLogic);
+        timerDisplay.style.display = "none";
+        lockMessage.style.display = "none";
+        startBtn.style.display = "block"; // Reveal the button
+        document.querySelector('.greeting').innerText = "2026 has Arrived.";
+    }
+}, 1000);
+
+// Existing Start Button Logic
+startBtn.addEventListener('click', () => {
+    document.getElementById('audio-gate').classList.remove('active');
+    document.getElementById('stage-1').classList.add('active');
+    // Call your firework and star-field functions here
+});

@@ -157,3 +157,35 @@ body, html {
     letter-spacing: 2px;
 }
 
+.timer-display {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#lock-message {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 200;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+#start-btn {
+    /* Style this to match your glass-container */
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#start-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
