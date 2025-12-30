@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For CJ | 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Syncopate:wght@700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="audio-gate" class="stage active">
+        <div class="glass-container">
+            <h2 class="greeting">Ready for 2026?</h2>
+            <button id="start-btn">Start Journey</button>
+        </div>
+    </div>
+
+    <div id="stage-1" class="stage">
+        <canvas id="fireworksCanvas"></canvas>
+        <div class="text-overlay">
+            <h1 id="main-title" class="fade-text">WELCOME 2026</h1>
+        </div>
+    </div>
+
+    <div id="stage-2" class="stage">
+        <div class="challenge-container">
+            <div class="ui-header">
+                <h2>C_OSMIC J_OURNEY</h2>
+                <p>Find and collect the 4 glowing stars to reveal the message.</p>
+            </div>
+            <div id="star-field"></div>
+            <div class="progress">Found: <span id="count">0</span>/4</div>
+        </div>
+    </div>
+
+    <div id="stage-3" class="stage">
+        <div class="message-card">
+            <div class="sparkle-line">✦ ✧ ✦</div>
+            <p class="final-message">
+                As the year turns, I find myself thinking about the people who bring a certain kind of light into the world just by being around.
+                <br><br>
+                There’s a quiet curiosity about the stories you haven’t told yet. If the timing ever feels right, I’d love to learn a little more about the person behind the smile.
+                <br><br>
+                Only if you’re open to it, of course. Wishing you a year as elegant as you are.
+            </p>
+            <div class="footer-sig">Happy New Year, CJ</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
