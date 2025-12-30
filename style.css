@@ -157,37 +157,3 @@ body, html {
     letter-spacing: 2px;
 }
 
-/* Ensure the canvas fills the screen correctly on mobile */
-#fireworksCanvas {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 600px) {
-    .glass-container, .message-card {
-        width: 85%; /* Give more room on mobile */
-        padding: 2rem 1.5rem;
-    }
-
-    .fade-text {
-        font-size: 2.5rem; /* Slightly smaller for mobile titles */
-    }
-
-    #star-field {
-        height: 300px; /* Keep the play area square and accessible */
-        width: 100%;
-    }
-
-    .clickable-star {
-        width: 35px; /* LARGER tap target for fingers on mobile */
-        height: 350px;
-        /* Note: We keep the clip-path, but make the size easier to hit */
-    }
-
-    .final-message {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-}
