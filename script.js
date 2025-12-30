@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('audio-gate').classList.remove('active');
         document.getElementById('stage-1').classList.add('active');
         animate();
+        
 
         // Title Transition
         const title = document.getElementById('main-title');
